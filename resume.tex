@@ -2,9 +2,20 @@
 % Note: convert through ps to pdf for best results
 %   ps2pdf resume.ps resume.pdf
 \documentclass[margin]{res}
+
+
 \usepackage[T1]{fontenc}
 \usepackage{tipa}
 %\usepackage{fullpage}
+\usepackage{hyperref}
+
+\usepackage{ifpdf}
+
+\ifpdf
+\usepackage[pdftex]{graphicx}
+\else
+\usepackage{graphicx}
+\fi
 
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
@@ -36,38 +47,28 @@
  
 \section{\textsc{Technical \\ Skills}}
     {\sl Languages:} Python, Ruby, C, JavaScript, HTML, CSS \\
-    {\sl Toolbox}: Django, Ruby on Rails, git, ViM, Unix SysAdmin, \LaTeX \\
+    {\sl Toolbox}: HTTP, Django, Flask, Ruby on Rails, AWS, git, ViM, Unix, \LaTeX \\
     {\sl Methodologies}: Iterative development, Agile, Scrum.
 
 \section{\textsc{Experience}}
-    {\sl Software Engineer, Intern} \hfill Summer 2011 \\
+    {\sl Software Engineer} \hfill Summer 2011 and Summer 2012 \\
     The New York Times
     \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Worked with Interactive News Technologies - a small, agile team of developers building news-driven web apps for nytimes.com.
+        \item Worked with Interactive News Technologies - a small, agile team of developers to build the New York Times London 2012 Olympics website.
     \end{itemize}
 
-    {\sl Programmer} \hfill 2009 - Present \\
+    {\sl Programmer Manager} \hfill 2009 - Present \\
     Instructional Media Services, Wesleyan University
     \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Researched and implemented solutions and applications to monitor and control multimedia classrooms. Participated in the development of a touch-screen controlled audio-visual control system written in Ruby.
+        \item Managed and hired a team of student programmers implementing applications to monitor and control multimedia classrooms. Participated in the development of a touch-screen controlled audio-visual control system written in Ruby.
     \end{itemize}
 
-    {\sl Python/Django Web Developer - Consultant} \hfill 2010 - 2011
+    {\sl Consultant} \hfill 2008 - Present
     \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Developed and deployed a custom Django web application to facilitate research, data entry, retrieval, and analysis for Wesleyan University's Program on Terrorism and Insurgency Research. Single-handedly implemented solution including revision history and multi-user collaboration.
+        \item Hired as consultant on numerous projects from developing web applications for university researchers to building a programmatic music synthesizer for a startup.
     \end{itemize}
 
-    {\sl Python/Django Web Developer - Consultant} \hfill  Summer 2008
-    \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Worked with the team at the Oregon Center for Applied Science, Inc (ORCAS) programming a Python script to parse Web sites and transfer parsed data into a Django Content Management System.
-    \end{itemize}
-
-    {\sl Google Highly Open Participation Contest, Participant} \hfill 2007 - 2008
-    \begin{itemize}  \itemsep -2pt %reduce space between items
-        \item Participated in open source software development.
-    \end{itemize}
-
-\section{\textsc{Languages}} Fluent in French  and Spanish.
+\section{\textsc{Languages}} Fluent in French and Spanish.
 
 \end{resume}
 \end{document}
